@@ -1,0 +1,49 @@
+<div class="table-container">
+
+    <table>
+  
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Estado</th>
+          <th>Producto</th>
+          <th>Telefono</th>
+          <th>Notas</th>
+          <th>Precio</th>
+          <th>Fecha de venta</th>
+          <th>Cliente</th>
+          <th>Vendedor</th>
+        </tr>
+      </thead>
+  
+      <tbody>
+  
+        <tr *ngFor="let sale of listadoSales" (click)="saleSeleccionado = sale">
+          <td> <strong>{{ sale.id }}</strong> </td>
+          <td> <span class="tag">{{ sale.status }}</span> </td>
+          <td>{{ sale.game }}</td>
+          <td>{{ sale.telNumber }}</td>
+          <td>{{ sale.notes }}</td>
+          <td>{{ sale.price | currency }}</td>
+          <td>{{sale.dateOfSale}}</td>
+          <td>{{ !!sale.client ? sale.client : 'N/A' }}</td>
+          <td>{{ !!sale.seller ? sale.seller : 'N/A' }}</td>
+        </tr>
+  
+      </tbody>
+  
+    </table>
+  
+  </div>
+  
+  <div class="message" *ngIf="listadoSales.length === 0">
+    <p>{{ cargandoSales ? 'Cargando...' : 'No se encontraron registros...'}}</p>
+  </div>
+  
+  
+  <app-details *ngIf="saleSeleccionado !== null"
+    [sale]="saleSeleccionado"
+    (close)="saleSeleccionado = null">
+  
+  </app-details>
+  
