@@ -1,15 +1,15 @@
-$color-primary: hsl(210, 29%, 29%);
-$color-secondary: hsl(204, 70%, 53%);
-$color-tertiary: hsl(167, 40%, 55%);
-$color-warning: hsl(0, 44%, 61%) !default;
+$color-primary: hsl(0, 94%, 27%);
+$color-secondary: rgb(255, 0, 0);
+$color-tertiary: hsl(355, 94%, 33%);
+$color-warning: hsl(0, 99%, 27%) !default;
 
-$background-color: #f3f6f9;
-$font-family: 'Jost', sans-serif;
-$font-size: 14px;
-$font-color: hsl(210, 29%, 22%);
-$font-color-light: #fff;
+$background-color:  rgba(23, 0, 5, 0.89) ;
+$font-family: 'Rajdhani', sans-serif;
+$font-size: 17px;
+$font-color: rgb(243,230,0);
+$font-color-light: rgb(238, 238, 11);
 
 $header-height: 88px;
 
-$workarea-background-color: #ffffff;
+$workarea-background-color: rgba(23,0,5,.75);
 $workarea-min-height: calc(100vh - 136px);

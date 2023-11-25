@@ -1,5 +1,5 @@
 @import 'variables';
-@import url('https://fonts.googleapis.com/css?family=Jost');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani');
 
 * {
   margin: 0;
@@ -17,7 +17,7 @@ body {
 
 main {
   background-color: $workarea-background-color;
-  box-shadow: rgba(255, 255, 255, 0.25) 0 0 100px 0;
+  box-shadow: rgba(2, 2, 2, 0.25) 0 0 100px 0;
   min-height: $workarea-min-height;
   border-radius: 8px;
   padding: 1rem 2rem;
@@ -43,6 +43,7 @@ h2 {
 span.tag {
   background-color: $color-secondary;
   color: white;
+  width: -moz-fit-content;
   width: fit-content;
   font-size: 0.75rem;
   padding: 0.25rem 0.5rem;
