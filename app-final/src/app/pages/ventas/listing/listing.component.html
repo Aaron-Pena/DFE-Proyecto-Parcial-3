@@ -25,7 +25,7 @@
           <td>{{ sale.telNumber }}</td>
           <td>{{ sale.notes }}</td>
           <td>{{ sale.price | currency }}</td>
-          <td>{{sale.dateOfSale}}</td>
+          <td>{{sale.dateOfSale | date}}</td>
           <td>{{ !!sale.client ? sale.client : 'N/A' }}</td>
           <td>{{ !!sale.seller ? sale.seller : 'N/A' }}</td>
         </tr>
